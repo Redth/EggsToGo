@@ -1,7 +1,7 @@
-Eggs To Go
+Eggs-To-Go
 ==========
 
-Eggs To Go is a Xamarin Cross Platform mobile library for implementing Easter Egg gestures!
+Eggs-To-Go is a Xamarin Cross Platform mobile library for implementing Easter Egg gestures!
 
 Features
 --------
@@ -13,7 +13,7 @@ Features
 
 
 Getting Started - Xamarin.iOS
--------------------------
+-----------------------------
 You can use the following code with any UIView you would like to recognize eggs/codes on (for example in a View Controller).  It will attach gesture listeners to the view you specify in the actor:
 
 ```csharp
@@ -30,7 +30,7 @@ easter.CommandDetected += cmd => Console.WriteLine("Command: " + cmd.Value);
 
  
 Getting Started - Xamarin.Android
--------------------------
+---------------------------------
 Android is a bit trickier than iOS, simply because recognizing gestures requires a MotionEvent of some sort.  Typically you would override the OnTouchEvent in an activity and pass that along to the Easter instance.  The Easter instance doesn't care where this information comes from, but it needs it in order to recognize gestures.
 
 You can use the following code in the Activity you would like to support the gesture detection:
@@ -93,29 +93,4 @@ Thanks
 Thanks to Eight-Bot software for their original post on getting this working with Mono for Android: http://eightbot.com/writeline/developer/konami-code-detection-with-mono-for-android/
 
 This was definitely my inspiration for making this simple component!
-
-
-License
--------
-The MIT License (MIT)
-
-Copyright (c) 2013 Jonathan Dick
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
 
