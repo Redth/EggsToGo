@@ -16,7 +16,7 @@ Getting Started - Xamarin.iOS
 -------------------------
 You can use the following code with any UIView you would like to recognize eggs/codes on (for example in a View Controller).  It will attach gesture listeners to the view you specify in the actor:
 
-```
+```csharp
 //Create our new instance, specifying the UIView to recognize gestures on
 var easter = new EggsToGo.Easter (this.View, new KonamiCode());
 
@@ -35,7 +35,7 @@ Android is a bit trickier than iOS, simply because recognizing gestures requires
 
 You can use the following code in the Activity you would like to support the gesture detection:
 
-```
+```csharp
 public class MainActivity : Activity
 {
 	EggsToGo.Easter easter;
@@ -80,7 +80,7 @@ Custom Egg Sequences
 --------------------
 By default the Konami and Mortal Kombat codes are built in, but you may want to add your own sequences!
 
-```
+```csharp
 var easyEgg = new CustomEgg("Easy")
     .WatchForSequence(Command.SwipeUp(), Command.SwipeDown(), Command.Tap());
     
