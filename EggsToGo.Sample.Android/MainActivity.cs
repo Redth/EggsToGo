@@ -25,7 +25,10 @@ namespace EggsToGo.Sample.Android
 
 			textViewLastCommand = FindViewById<TextView> (Resource.Id.textViewLastCommand);
 
-			easter = new EggsToGo.Easter (new KonamiCode (), new MortalKombatCode ());
+			var EasyEgg = new CustomEgg ("Easy").WatchForSequence (
+				Command.SwipeUp (), Command.SwipeDown (), Command.Tap ());
+
+			easter = new EggsToGo.Easter (new KonamiCode (), new MortalKombatCode (), EasyEgg);
 			easter.CommandDetected += (command) => RunOnUiThread(() => textViewLastCommand.Text = command.Value);
 			easter.EggDetected += (egg) => Toast.MakeText(this, "You've entered the " + egg.Name + " Code!", ToastLength.Long).Show();
 		}

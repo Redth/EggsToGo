@@ -22,13 +22,14 @@ namespace EggsToGo
 	{
 		public CustomEgg(string name)
 		{
-			Name = name;
+			this.name = name;
 		}
 
-		public override string Name { get; private set; }
+		public override string Name { get { return name; } }
 		public override IEnumerable<IEnumerable<Command>> MatchingSequences { get { return sequences; } }
 
 		List<List<Command>> sequences = new List<List<Command>>();
+		string name = string.Empty;
 
 		public CustomEgg WatchForSequence(params Command[] commands)
 		{
