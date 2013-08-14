@@ -80,6 +80,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="EggsToGo.iOS">
+      <HintPath>..\..\..\lib\ios\EggsToGo.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -99,10 +102,4 @@
     <InterfaceDefinition Include="EggsToGo_Sample_iOSViewController.xib" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\EggsToGo.iOS\EggsToGo.iOS.csproj">
-      <Project>{B0A73A56-AEDD-4446-928E-A5BA73CB1972}</Project>
-      <Name>EggsToGo.iOS</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
