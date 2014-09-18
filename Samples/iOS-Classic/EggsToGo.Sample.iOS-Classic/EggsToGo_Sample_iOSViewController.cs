@@ -1,7 +1,7 @@
 using System;
 using System.Drawing;
-using Foundation;
-using UIKit;
+using MonoTouch.Foundation;
+using MonoTouch.UIKit;
 
 namespace EggsToGo.Sample.iOS
 {

@@ -4,7 +4,7 @@
 // actions made in the UI designer. If it is removed, they will be lost.
 // Manual changes to this file may not be handled correctly.
 //
-using Foundation;
+using MonoTouch.Foundation;
 using System.CodeDom.Compiler;
 
 namespace EggsToGo.Sample.iOS
@@ -13,7 +13,7 @@ namespace EggsToGo.Sample.iOS
 	partial class EggsToGo_Sample_iOSViewController
 	{
 		[Outlet]
-		UIKit.UILabel labelLastCommand { get; set; }
+		MonoTouch.UIKit.UILabel labelLastCommand { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{

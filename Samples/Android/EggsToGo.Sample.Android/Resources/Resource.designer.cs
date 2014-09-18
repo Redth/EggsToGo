@@ -26,7 +26,7 @@ namespace EggsToGo.Sample.Android
 		
 		public static void UpdateIdValues()
 		{
-			EggsToGo.Resource.String.library_name = EggsToGo.Sample.Android.Resource.String.library_name;
+			global::EggsToGo.Resource.String.library_name = global::EggsToGo.Sample.Android.Resource.String.library_name;
 		}
 		
 		public partial class Attribute

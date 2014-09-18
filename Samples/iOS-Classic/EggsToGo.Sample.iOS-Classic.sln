@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EggsToGo.Sample.iOS", "EggsToGo.Sample.iOS\EggsToGo.Sample.iOS.csproj", "{E05002AC-2B24-40C6-B4AA-7E4860D22366}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EggsToGo.iOS-Classic", "..\..\src\EggsToGo.iOS\EggsToGo.iOS-Classic.csproj", "{B0A73A56-AEDD-4446-928E-A5BA73CB1972}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EggsToGo.iOS", "..\..\src\EggsToGo.iOS\EggsToGo.iOS.csproj", "{B0A73A56-AEDD-4446-928E-A5BA73CB1972}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EggsToGo.Sample.iOS-Classic", "EggsToGo.Sample.iOS-Classic\EggsToGo.Sample.iOS-Classic.csproj", "{E05002AC-2B24-40C6-B4AA-7E4860D22366}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
-		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
-		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.AppStore|iPhone.ActiveCfg = Release|Any CPU
-		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.AppStore|iPhone.Build.0 = Debug|Any CPU
 		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0A73A56-AEDD-4446-928E-A5BA73CB1972}.Debug|iPhone.ActiveCfg = Debug|Any CPU
@@ -51,6 +51,6 @@ Global
 		{E05002AC-2B24-40C6-B4AA-7E4860D22366}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = EggsToGo.Sample.iOS\EggsToGo.Sample.iOS.csproj
+		StartupItem = EggsToGo.Sample.iOS-Classic\EggsToGo.Sample.iOS-Classic.csproj
 	EndGlobalSection
 EndGlobal
