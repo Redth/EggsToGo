@@ -134,7 +134,4 @@ Global
 		{85CD0562-4AE9-4976-A6D2-A418C52122F5} = {2131C3C3-E284-44D6-B07D-900885940AA0}
 		{E05002AC-2B24-40C6-B4AA-7E4860D22366} = {2131C3C3-E284-44D6-B07D-900885940AA0}
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Samples\Android\EggsToGo.Sample.Android\EggsToGo.Sample.Android.csproj
-	EndGlobalSection
 EndGlobal

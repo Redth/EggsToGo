@@ -27,7 +27,6 @@ namespace EggsToGo.Sample.iOS
 				av.Show();
 
 			};
-
 		}
 	}
 }
