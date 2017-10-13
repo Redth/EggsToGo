@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>EggsToGo</id>
+    <title>EggsToGo Konami Code for Xamarin</title>
+    <version>2.0.0</version>
+    <authors>Redth</authors>
+    <owners>Redth</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Eggs-To-Go is a Xamarin Cross Platform mobile library for implementing Easter Egg gestures!</description>
+    <copyright>Copyright 2014-2017 Redth</copyright>
+    <projectUrl>https://github.com/redth/eggstogo</projectUrl>
+    <licenseUrl>https://github.com/Redth/EggsToGo/blob/master/LICENSE</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/Redth/EggsToGo/master/Art/EggsToGo-Icon.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="lib/android/EggsToGo.dll" target="lib/MonoAndroid10" />
+    <file src="lib/ios-unified/EggsToGo.dll" target="lib/Xamarin.iOS10" />
+  </files>
+</package>
