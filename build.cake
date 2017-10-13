@@ -9,14 +9,17 @@ var configuration = Argument ("configuration", "Release");
 
 var NUGET_VERSION = Argument("APPVEYOR_BUILD_VERSION", Argument("nugetversion", EnvironmentVariable ("APPVEYOR_BUILD_VERSION") ?? "0.9999"));
 
-var ANDROID_HOME = EnvironmentVariable ("ANDROID_HOME") ?? "C:\\Program Files (x86)\\Android\\android-sdk\\";
+var ANDROID_HOME = EnvironmentVariable ("ANDROID_HOME") ?? 
+    (IsRunningOnWindows () ? "C:\\Program Files (x86)\\Android\\android-sdk\\" : "");
 
 Task ("prereq").Does (() => {
-    var s = new AndroidSdkManagerToolSettings { SdkRoot = ANDROID_HOME };
+    var s = new AndroidSdkManagerToolSettings { SdkRoot = ANDROID_HOME, SkipVersionCheck = true };
 
     AcceptLicenses (s);
 
     AndroidSdkManagerUpdateAll (s);
+
+    AcceptLicenses (s);
 
     AndroidSdkManagerInstall (new [] { "platforms;android-15", "platforms;android-24" }, s);
 });
