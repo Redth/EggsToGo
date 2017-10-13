@@ -57,6 +57,11 @@ namespace EggsToGo
 			return cmd.Value.Equals (this.Value);
 		}
 
+		public override int GetHashCode()
+		{
+			return base.GetHashCode();
+		}
+
 		public static SwipeUpCommand SwipeUp()
 		{
 			return new SwipeUpCommand();
