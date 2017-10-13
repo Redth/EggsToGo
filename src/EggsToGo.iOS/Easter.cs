@@ -1,10 +1,6 @@
 using System;
 using System.Linq;
-#if __UNIFIED__
 using UIKit;
-#else
-using MonoTouch.UIKit;
-#endif
 
 namespace EggsToGo
 {
